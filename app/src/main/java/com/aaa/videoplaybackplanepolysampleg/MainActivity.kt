@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             setVideoSurface(surface)
 
             /* res/raw にある動画ファイルを指定 */
-            val uri = "android.resource://${context.packageName}/${R.raw.green_flag}"
+            val uri = "android.resource://${context.packageName}/${R.raw.vuforiasizzlereel}"
             Log.d("aaaaa", "uri=$uri")
             val mediaItem = MediaItem.fromUri(uri)
             setMediaItem(mediaItem)
