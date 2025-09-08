@@ -50,7 +50,6 @@ sequenceDiagram
     participant System
     participant MainActivity
     participant SurfaceTexture
-    participant GlSurfaceView
     participant ExoPlayer
     participant Surface
     participant Jni
