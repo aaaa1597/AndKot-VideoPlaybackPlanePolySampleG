@@ -105,4 +105,6 @@ sequenceDiagram
     System-->>MainActivity: onDrawFrame()
     MainActivity->>SurfaceTexture: updateTexImage()
     MainActivity->>Jni: nativeOnDrawFrame()
+    Jni->>native-lib: nativeOnDrawFrame()
+    native-lib->>OpenGL: Drawing processing.
 ```
