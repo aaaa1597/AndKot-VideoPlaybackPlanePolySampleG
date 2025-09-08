@@ -80,10 +80,6 @@ sequenceDiagram
 sequenceDiagram
     participant System
     participant MainActivity
-    participant GlSurfaceView
-    participant ExoPlayer
-    participant Surface
-    participant SurfaceTexture
     participant Jni
     participant native-lib
     participant OpenGL
@@ -101,14 +97,10 @@ sequenceDiagram
     participant System
     participant MainActivity
     participant GlSurfaceView
-    participant ExoPlayer
-    participant Surface
     participant SurfaceTexture
     participant Jni
-    participant native-lib
-    participant OpenGL
     %% ------------------------
-    Note over System, OpenGL: Draw Frame.
+    Note over System, Jni: Draw Frame.
     SurfaceTexture->>MainActivity: onFrameAvailable()
     MainActivity->>GlSurfaceView: requestRender()
     System-->>MainActivity: onDrawFrame()
