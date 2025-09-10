@@ -148,8 +148,8 @@ Java_com_aaa_videoplaybackplanepolysampleg_JniKt_nativeSetVideoSize(JNIEnv *env,
 extern "C"
 JNIEXPORT void JNICALL
 Java_com_aaa_videoplaybackplanepolysampleg_JniKt_nativeOnDrawFrame(JNIEnv *env, jclass clazz) {
-    glClear(GL_COLOR_BUFFER_BIT);
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 
     if (g_program == 0 || g_videoWidth == 0.0f) {
         return;
