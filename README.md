@@ -2,6 +2,10 @@
 - Android Kotlin sample showing video playback on a C++ flat polygon (Gemini version).  
 **It's finally done.**
 
+# For more details, check out this blog.
+- en: In progress
+- 日本語: [動画再生を板ポリ上で実行するサンプルコードを作ってみた。](https://zenn.dev/rg687076/articles/dfb295182545ef)
+
 # Sequence
 
 ## Init Sequence.
